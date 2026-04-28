@@ -23,9 +23,6 @@
 - **Картинки**: WebP, CDN Cloudflare
 - **Для мобильной версии**: адаптивный дизайн (mobile first)
 
-## Как разработчику запустить
 
-### Скачать
-```bash
-git clone https://github.com/yourteam/store-garden.git
-cd store-garden
+### Запуск
+Live Server
