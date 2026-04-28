@@ -1,0 +1,498 @@
+.header {
+  background-color: white;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sideImage {
+  flex: 0 0 auto;
+}
+
+.sideImage img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease;
+}
+
+.sideImage img:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+.navLink:hover {
+  color: #339933;
+  background-color: rgba(0, 151, 13, 0.219);
+}
+
+.navLink:active {
+  animation: clickAnimation 0.3s ease;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cartContainer {
+  flex: 0 0 auto;
+  text-decoration: none;
+  position: relative;
+}
+
+.cartIconWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartImage {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cartContainer:hover .cartImage {
+  transform: scale(1.1);
+}
+
+.homePage {
+  background-color: white;
+}
+
+.hero {
+  background-image: url('img/hero-banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  padding: 60px 0;
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.heroTitle {
+  color: white;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.ctaButton {
+  background-color: #388E3C;
+  color: white;
+  border: none;
+  padding: 14px 50px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #2E7D32;
+}
+
+.categories {
+  width: 100%;
+  margin: 60px 0;
+}
+
+.categoriesHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.categoriesTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-right: 20px;
+}
+
+.divider {
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+  margin: 0 20px;
+}
+
+.allCategoriesBtn {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.allCategoriesBtn:hover {
+  border-color: #999;
+  color: #666;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.categoryImage {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.categoryName {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+
+.discountSection {
+  background-color: #388E3C;
+  width: calc(100% - 40px);
+  margin: 60px 20px;
+  border-radius: 15px;
+  padding: 60px 40px;
+}
+
+.discountContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.discountTitle {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discountMain {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+}
+
+.discountLeft {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.discountImg {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.discountForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.formInput {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+.formInput::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.discountButton {
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.discountButton:hover {
+  background: #f5f5f5;
+}
+
+.saleSection {
+  width: 100%;
+  margin: 60px 0;
+}
+
+.saleHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.saleTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-right: 20px;
+}
+
+.allSalesBtn {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.allSalesBtn:hover {
+  border-color: #999;
+  color: #666;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.productCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.productImageContainer {
+  position: relative;
+}
+
+.productImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #388E3C;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.productInfo {
+  padding: 20px;
+}
+
+.productName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.currentPrice {
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+}
+
+.oldPrice {
+  font-size: 18px;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact__container {
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 20px 0;
+  gap: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact__card {
+  width: 100%;
+  height: 150px;
+  opacity: 1;
+  gap: 100px;
+  display: flex;
+  padding-left: 30px;
+}
+
+.contact__item_label {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #8B8B8B;
+  width: 67px;
+  height: 26px;
+  opacity: 1;
+}
+
+.contact__left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact__bottom {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact__section {
+  margin-bottom: 30px;
+}
+
+.contact__title {
+  font-style: Bold;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-right: 10px;
+}
+
+.contact__item {
+  width: 780px;
+  height: 150px;
+  opacity: 1;
+  gap: 16px;
+  border-radius: radius big;
+  padding: 32px;
+}
+
+.contact__item_value {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 40px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  color: #282828;
+}
+
+.contact__socials {
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.contact__socials_icon img {
+  width: 44px;
+  height: 44px;
+  opacity: 1;
+  gap: 16px;
+}
+
+.contact__map_container {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.contact__yandex_map {
+  border: none;
+  height: 300px;
+  display: block;
+  text-align: center;
+}
